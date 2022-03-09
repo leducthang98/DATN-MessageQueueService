@@ -27,7 +27,6 @@ async function run() {
 async function processMessage(message) {
     console.log('message:', message)
     const { type, action, data } = message
-    console.log(data)
     if (type === 'book') {
         switch (action) {
             case 'create':
